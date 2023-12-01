@@ -12,14 +12,14 @@
 int main()
 {
 	int fahr, celsius;
-	int lower, upper, step;
+	int lowerLimit, upperLimit, step;
 
-	lower = 0;
-	upper = 300;
+	lowerLimit = 0;
+	upperLimit = 300;
 	step  = 20;
-	fahr = lower;
+	fahr = lowerLimit;
 
-	while (fahr <= upper)
+	while (fahr <= upperLimit)
 	{
 		celsius = 5 * (fahr-32) / 9;
 		printf("%d\t%d\n", fahr, celsius);
