@@ -2,7 +2,7 @@
 	Note: Refer to the fahrenheitCelsiusInteger.c source file for general comments regarding this code.
 	Changes are primarly the support for floating point numbers, as the filename might suggest.
 
-	Extra: This will be the ground for exercise 03 and 04.
+	Extra: This will be the ground for exercise 03.
 */
 
 
@@ -18,7 +18,11 @@ int main()
 	step = 20;
 
 	fahr = lowerLimit;
-	
+
+	// Print a heading above our table.
+	printf("Celsius    Fahrenheit\n");
+	printf("---------------------\n");
+
 	while (fahr <= upperLimit)
 	{
 		// Note that we can use decimals now and hence the original formula,
@@ -34,7 +38,8 @@ int main()
 		// %f is the construction that prints a floating point number.
 		// The numbers between specifies the length of the integer part
 		// and the precision of our fractal part; segmented by the dot.
-		printf("%3.0f %6.1f\n", fahr, celsius);
+		// We match these with our header that can be seen above.
+		printf("%7.0f %13.1f\n", fahr, celsius);
 		fahr += step;
 	}
 }
