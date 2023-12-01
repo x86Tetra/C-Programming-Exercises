@@ -20,7 +20,7 @@ int main()
 	fahr = lowerLimit;
 
 	// Print a heading above our table.
-	printf("Celsius    Fahrenheit\n");
+	printf("Fahrenheit    Celsius\n");
 	printf("---------------------\n");
 
 	while (fahr <= upperLimit)
@@ -39,7 +39,7 @@ int main()
 		// The numbers between specifies the length of the integer part
 		// and the precision of our fractal part; segmented by the dot.
 		// We match these with our header that can be seen above.
-		printf("%7.0f %13.1f\n", fahr, celsius);
+		printf("%10.0f %10.1f\n", fahr, celsius);
 		fahr += step;
 	}
 }
