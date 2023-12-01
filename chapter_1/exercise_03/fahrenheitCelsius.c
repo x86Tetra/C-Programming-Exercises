@@ -19,6 +19,10 @@ int main()
 	step  = 20;
 	fahr = lowerLimit;
 
+	// The condition in the parantheses is tested; if it's true (that
+	// being if fahr is lesser than or equal to upperLimit), the code
+	// encapsulated in the while loop will be executed.
+
 	while (fahr <= upperLimit)
 	{
 		celsius = 5 * (fahr-32) / 9;
