@@ -32,11 +32,21 @@ int main()
 		// with (5/9) would just truncate down to 0, hence the output would
 		// be 0 for all iterations.
 		celsius = 5 * (fahr-32) / 9;
+
 		// Printf(); is a general purpose output formatting function.
 		// The first argument specifies a string of characters, where each % construction
 		// is paired with their corresponding secondary and so forth arguments.
+		// These must be matched with the appropiate number and type, otherwise errors will
+		// occur.
 		// As for %d, it specifies an integer argument to be printed.
-		printf("%d\t%d\n", fahr, celsius);
+		// Adding a valid digit in between the two characters making up "%d" will set the
+		// printing length of said variable.
+		//
+		// Logically, we can observe an output of maximum 3 characters in the "fahr" variable
+		// for example, so we will just simply set it to %3d. Doing so, as observed below,
+		// will make the output of the argument right-justified.
+		printf("%3d %6d\n", fahr, celsius);
+
 		// Increase the value in the "fahr" variable with the specified value in "step".
 		fahr += step;
 	}
