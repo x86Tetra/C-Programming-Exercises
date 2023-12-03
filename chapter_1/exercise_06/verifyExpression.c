@@ -16,6 +16,11 @@ int main()
 	// This text stream, generated using getchar(), is derived from a valid
 	// input device present that can fetch character data, like a keyboard.
 
+	// The importance of EOF, End Of File, plays into the fact that there is
+	// a problem distinguishing the end of an input from a valid data source.
+	// getchar() solves this by returning a distinctive value when there is
+	// no more data to be read.
+
 	// The relational operator, !=, means "not equal to". Since this makes it
 	// a condition, the expression will return an integer repressenting true or
 	// false, based on whether the first character is a non-EOF integer or not.
