@@ -7,8 +7,26 @@ to the C programming language.
 The course material that I have myself provided is "The C Programming 
 Language, Second Edition" by Brian W. Kernighan and Dennis M. Ritchie.
 
+The following chapters in said book are:
+
+-> Chapter 1: A Tutorial Introduction.
+
+-> Chapter 2: Types, Operators, and Expressions.
+
+-> Chapter 3: Control Flow.
+
+-> Chapter 4: Functions and Program Structure.
+
+-> Chapter 5: Pointers and Arrays.
+
+-> Chapter 6: Structures.
+
+-> Chapter 7: Input and Output.
+
+-> Chapter 8: The UNIX System Interface.
+
 ---------------- Todo ----------------
-[ ] Chapter 1: 29.16% Done	(7/24)
+[ ] Chapter 1: 33.33% Done	(8/24)
 [ ] Chapter 2: 0%		(0/10)
 [ ] Chapter 3: 0%		(0/6 )
 [ ] Chapter 4: 0%		(0/14)
@@ -18,4 +36,16 @@ Language, Second Edition" by Brian W. Kernighan and Dennis M. Ritchie.
 [ ] Chapter 8: 0%		(0/8 )
 
 
-Total: 7.21% done (7/97)
+Total: 8.24% done (8/97)
+
+-------- Compile Instructions --------
+
+Considering that you might've already
+cloned this repo, please do the following:
+
+1. Simply "cd" into a directory where
+the program source file is located.
+
+2. Issue a basic "gcc [fileName]" command.
+
+3. Run the a.out file (issue ./a.out).
