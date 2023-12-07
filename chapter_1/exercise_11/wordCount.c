@@ -29,6 +29,8 @@ int main()
 			++nw;
 		}
 	}
+
+	printf("\nwc %d, c %d, \\n %d\n", nw, nc, nl);
 }
 
 /*
