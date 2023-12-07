@@ -1,3 +1,9 @@
+/*
+	Program description: a very barebone and minimalist version
+	of the commonly used UNIX command: wc (word counter).
+*/
+
+
 #include <stdio.h>
 
 #define IN 	1
@@ -16,10 +22,10 @@ int main()
 		if (c == '\n')
 			++nl;
 		if (c == ' ' || c == '\n' || c == '\t')
-			state = OUT
+			state = OUT;
 		else if(state == OUT)
 		{
-			state == IN;
+			state = IN;
 			++nw;
 		}
 	}
