@@ -1,4 +1,4 @@
-/*
+ /*
 	Program description: a very barebone and minimalist version
 	of the commonly used UNIX command: wc (word counter).
 */
@@ -30,11 +30,10 @@ int main()
 		}
 	}
 
-	printf("\nwc %d, c %d, \\n %d\n", nw, nc, nl);
+	printf("%d\t%d\t%d\n", nl, nw, nc);
 }
 
 /*
 	Question: How would you test the word count program, what
 	kinds of input are most likely to uncover bugs if there are any.
 */
-
