@@ -59,13 +59,13 @@ compilers:
 1)	Machine	: Laptop/x86_64
 	OS	: Debian 12
 	CPU	: Intel Core i5-1135G7
-	Compiler: GCC
+	Compiler: GCC 12.2.0
 	
 
 2)	Machine : Workstation/x86_64
 	OS	: Debian 12
 	CPU	: Ryzen 5 3600
-	Compiler: GCC
+	Compiler: GCC 12.2.0
 
 3)	Machine	: Phone/aarch64
 	OS	: Android 13
