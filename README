@@ -49,3 +49,25 @@ the program source file is located.
 2. Issue a basic "gcc [fileName]" command.
 
 3. Run the a.out file (issue ./a.out).
+
+------------- Machines ---------------
+
+This repository is currently being worked on
+the following machines with their respective
+compilers:
+
+1)	Machine	: Laptop/x86_64
+	OS	: Debian 12
+	CPU	: Intel Core i5-1135G7
+	Compiler: GCC
+	
+
+2)	Machine : Workstation/x86_64
+	OS	: Debian 12
+	CPU	: Ryzen 5 3600
+	Compiler: GCC
+
+3)	Machine	: Phone/aarch64
+	OS	: Android 13
+	CPU	: Qualcomm SM6375
+	Compiler: clang 17.0.6
