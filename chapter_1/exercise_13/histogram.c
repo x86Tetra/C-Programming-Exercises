@@ -2,7 +2,7 @@
 	Instruction: Write a program to print a histogram of
 	the lengths of words in its input.
 
-	TODO: comment further
+	TODO: Explain its internals.
 */
 
 
@@ -17,7 +17,7 @@
 int main()
 {
 
-	int count[MAX_LENGTH];
+	int count[MAX_LENGTH+1];
 	int c, state, length = 0;
 
 	for (int i = 0; i < MAX_LENGTH+1; i++)
@@ -50,6 +50,13 @@ int main()
 	{
 		printf("\n%d\t: ", i+1);
 		for (int j = 0; j < count[i]; j++)
+			printf("#");
+	}
+
+	if (count[MAX_LENGTH+1])
+	{
+		printf("\nOther\t:");
+		for (int i = 0; i < count[MAX_LENGTH+1]; ++i)
 			printf("#");
 	}
 
