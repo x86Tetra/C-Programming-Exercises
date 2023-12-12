@@ -52,13 +52,14 @@ int main()
 		for (int j = 0; j < count[i]; j++)
 			printf("#");
 	}
-
+/*
 	if (count[MAX_LENGTH+1])
 	{
 		printf("\nOther\t:");
-		for (int i = 0; i < count[MAX_LENGTH+1]; ++i)
+		for (int i = 0; i < count[MAX_LENGTH+1]; i++)
 			printf("#");
+		printf("%d", count[MAX_LENGTH+1]);
 	}
-
+*/
 	printf("\n");
 }
