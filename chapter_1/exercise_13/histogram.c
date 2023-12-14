@@ -17,10 +17,10 @@
 int main()
 {
 
-	int count[MAX_LENGTH+1];
+	int count[MAX_LENGTH];
 	int c, state, length = 0;
 
-	for (int i = 0; i < MAX_LENGTH+1; i++)
+	for (int i = 0; i < MAX_LENGTH; i++)
 		count[i] = 0;
 
 	while ((c = getchar()) != EOF)
@@ -29,9 +29,7 @@ int main()
 		{
 			state = IN;
 
-			if (length > MAX_LENGTH)
-				count[MAX_LENGTH+1]++;
-			else if (length <= 0)
+			if (length > MAX_LENGTH && length <= 0)
 				;
 			else
 				count[length-1]++;
@@ -52,14 +50,6 @@ int main()
 		for (int j = 0; j < count[i]; j++)
 			printf("#");
 	}
-/*
-	if (count[MAX_LENGTH+1])
-	{
-		printf("\nOther\t:");
-		for (int i = 0; i < count[MAX_LENGTH+1]; i++)
-			printf("#");
-		printf("%d", count[MAX_LENGTH+1]);
-	}
-*/
+
 	printf("\n");
 }
