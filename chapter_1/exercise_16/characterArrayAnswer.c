@@ -16,8 +16,8 @@ int main()
 			largest = len;
 			sCPY(longest, line);
 		}
-
-	printf("LONGEST LINE ( %d CHARACTERS ):\n%s\n", largest, longest);
+	if (longest > 0)
+		printf("LONGEST LINE ( %d CHARACTERS ):\n%s\n", largest, longest);
 }
 
 
