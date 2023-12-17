@@ -45,11 +45,12 @@ int main()
 
 
 	for (int i = 0; i < MAX_LENGTH; i++)
-	{
-		printf("\n%d\t: ", i+1);
-		for (int j = 0; j < count[i]; j++)
-			printf("#");
-	}
+		if (count[i] > 0)
+		{
+			printf("\n%d\t: ", i+1);
+			for (int j = 0; j < count[i]; j++)
+				printf("#");
+		}
 
 	printf("\n");
 }
