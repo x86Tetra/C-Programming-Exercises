@@ -30,7 +30,7 @@ int returnLine(char line[], int lim)
 			line[j] = c;
 			j++;
 		}
-	if (i == '\n')
+	if (c == '\n')
 	{
 		line[j] = c;
 		j++;
