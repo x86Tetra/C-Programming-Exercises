@@ -1,3 +1,10 @@
+/*
+	Instructions: Revise the main routine of the longest-line
+	program so it will correctly print the length of arbitary 
+	long input lines, and as much as possible of the text.
+*/
+
+
 #include <stdio.h>
 #define MAXLINE 1000
 
