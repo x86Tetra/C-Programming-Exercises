@@ -60,14 +60,12 @@ compilers:
 	OS	: Debian 12
 	CPU	: Intel Core i5-1135G7
 	Compiler: GCC 12.2.0
+  Editor: Neovim 0.9.4
 	
 
 2)	Machine : Workstation/x86_64
-	OS	: Debian 12
-	CPU	: Ryzen 5 3600
+	OS      : Debian 12
+	CPU     : Ryzen 5 3600
 	Compiler: GCC 12.2.0
+  Editor  : Neovim 0.9.4
 
-3)	Machine	: Phone/aarch64
-	OS	: Android 13
-	CPU	: Qualcomm SM6375
-	Compiler: clang 17.0.6
