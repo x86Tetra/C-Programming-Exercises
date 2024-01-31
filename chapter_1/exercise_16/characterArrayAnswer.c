@@ -21,7 +21,7 @@ int main()
 		if (largest < len)
 		{
 			largest = len;
-			sCPY(longest, line);
+			sCP(longest, line);
 		}
 	if (longest > 0)
 		printf("LONGEST LINE ( %d CHARACTERS ):\n%s\n", largest, longest);
@@ -47,7 +47,7 @@ int returnLine(char line[], int lim)
 	return i;
 }
 
-void sCPY(char dst[], char src[])
+void sCP(char dst[], char src[])
 {
 	int i = 0;
 	while((dst[i] = src[i]) != '\0')
