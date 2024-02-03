@@ -33,6 +33,7 @@ int fetchline(char line[], int limit)
 	{
 		line[j] = c;
 		j++;
+    i++;
 	}
 	line[j] = '\0';
 	return i;
