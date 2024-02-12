@@ -7,8 +7,51 @@
 */
 
 #include <stdio.h>
-
+#define TABS 8
 
 int main()
 {
+  int c,
+      nb = 0,
+      nt = 0,
+      pos;
+
+  for (pos = 1; (c = getchar()) != EOF ; pos++)
+  {
+    if (c == ' ')
+    {
+      if ((pos % TABS) != 0)
+        nb++;
+      else
+      {
+        nb = 0;
+        nt++;
+      }
+    }
+    else
+    {
+      while (nt > 0)
+      {
+        putchar('\t');
+        nt--;
+      }
+      if (c == '\t')
+      {
+        nb = 0;
+      }
+      else
+        while (nb > 0) 
+        {
+          putchar(' ');
+          nb--;
+        }
+
+
+      putchar(c);
+      if (c == '\n')
+        pos = 0;
+      else if (c == '\t')
+          pos = pos + (TABS - (pos-1) % TABS) - 1;
+    }
+  }
 }
