@@ -27,11 +27,11 @@ int main()
       // current position in the current line.
       // 
       // nb = TABS - (pos - 1) % TABS
-      //
+      // 
       // - Table -
       // pos  | nb
       // -----|-----
-      // 1    | 0
+      // 1    | 8
       // 2    | 7
       // 3    | 6
       // 4    | 5
@@ -39,10 +39,10 @@ int main()
       // 6    | 3
       // 7    | 2
       // 8    | 1
-      // 9    | 0
+      // 9    | 8
       // 10   | 7
       // ...  | ...
-      //
+      // 
       // A\tB = A7654321B
       //        A       B
       // A tab present on the second position will 
